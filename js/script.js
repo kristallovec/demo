@@ -1,10 +1,23 @@
 "use strict";
 
-const answer = [];
+const number0Films = prompt('Сколько фильмов вы уже посмотрели?', '');
 
-answer[0] = prompt('Vashe imya?', '');
-answer[1] = prompt('skolko let?', '');
-answer[2] = prompt('Kto ti?', '');
+const personalMovieDB = {
 
-document.write(answer);
+    count: number0Films,
+    movies: {},
+    actors: {},
+    geners: [],
+    privat: false
+};
+
+const a = prompt('Odin iz prosmotrenix filmov?', ''),
+      b = prompt('Ozenite film?', ''),
+      c = prompt('Odin iz prosmotrenix filmov?', ''),
+      d = prompt('Ozenite film?', '');
+
+      personalMovieDB.movies[a] = b;
+      personalMovieDB.movies[c] = d;
+
+      console.log(personalMovieDB);
  
